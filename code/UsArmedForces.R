@@ -4,7 +4,7 @@ library(rvest)
 library(tidyverse)
 library(dplyr)
 ##Step 1: Get Data From csv file ----
-df <- read_csv("C:/Users/PRIYNKA/Downloads/US Armed Forces (6_2024) - Sheet1.csv", col_names = "FALSE")
+df <- read_csv("--add link to your data document here//US-ArmedForces-untidy.csv", col_names = "FALSE")
 
 # 1: Remove unwanted totals columns.
 df_new <- df[, !(names(df) %in% c("X4", "X7", "X10", "X13", "X16", "X17", "X18", "X19"))]
