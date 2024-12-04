@@ -1,0 +1,23 @@
+# Directory Metadata for Code Folder
+
+This folder contains R script files used for data processing, analysis, and transformation in this project. Below is an overview of the contents:
+
+- **Files:**
+  - `USArmedForces.R`: An R script that processes raw data from the `US-ArmedForces-untidy.csv` file into a tidy format suitable for analysis. 
+  This script performs the following steps:
+    1. Loads necessary R packages (`rvest`, `tidyverse`, `dplyr`).
+    2. Reads the raw CSV file containing military personnel data.
+    3. Cleans and transforms the data:
+       - Removes unwanted columns.
+       - Renames columns for clarity.
+       - Handles missing values by replacing them with `0`.
+       - Filters out unnecessary rows based on specific criteria.
+       - Pivots the data into a tidy format for analysis.
+       - Splits composite columns into separate variables and trims any extra whitespace.
+    4. Outputs the processed dataset for further use or analysis.
+
+- **Purpose:**
+  This directory is dedicated to scripts that automate data manipulation and analysis tasks. It ensures reproducibility and efficiency when handling project datasets.
+
+- **Notes:**
+  As the repository evolves, additional scripts may be added to this folder to extend functionality or support other aspects of the project. This document should be updated to reflect such changes.
